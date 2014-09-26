@@ -194,3 +194,57 @@ methodCollection.logHello = function() {
 //Now call your alertHello and logHello methods. 
 methodCollection.alertHello();
 methodCollection.logHello();
+
+var devMountainEmployees = [];
+
+var tyler = {
+    name: 'Tyler', 
+    position: 'Lead Instructor/Engineer', 
+    spiritAnimal: 'Honey Badger'    
+};
+
+var cahlan = {
+    name: 'Cahlan', 
+    position: 'CEO', 
+    spiritAnimal: 'butterfly'    
+};
+
+var ryan = {
+    name: 'Ryan', 
+    position: 'Marketing', 
+    spiritAnimal: 'fox'    
+};
+
+var colt = {
+    name: 'Colt',
+    position: 'Everything really',
+    spiritAnimal: 'Young Male Horse'
+};
+
+//Above you're given an empty array with four objects. Fill the devMountainEmployees array with those four objects. After that console.log the length of the Array and make sure that it's equal to 4.
+
+devMountainEmployees.push(tyler);
+devMountainEmployees.push(cahlan);
+devMountainEmployees.push(ryan);
+devMountainEmployees.push(colt);
+
+//console.log(devMountainEmployees.length);
+
+//Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'. Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
+
+
+for(var i=0; i<devMountainEmployees.length; i++)
+    {
+        var NameCheck = devMountainEmployees[i].name;
+        
+        if(NameCheck === "Cahlan")
+        {
+            console.log("found him");
+            devMountainEmployees.splice([i],1);
+        }
+    }
+
+
+//Now console.log your final array and make sure that it's correct.
+
+console.log(devMountainEmployees);
