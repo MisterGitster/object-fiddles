@@ -149,3 +149,27 @@ user.username = "misterman";
 //Now console.log your object and make sure it looks right.
 
 console.log(user);
+
+var user = {
+        name: 'Tyler McGinnis', 
+        age: 24,
+        pwHash: 'U+Ldlngx2BYQk',
+        email: 'tylermcginnis33@gmail.com',
+        birthday: '05/02/1990',
+        username: 'tylermcginnis33',
+        sayName: function(){
+            alert('Email is : ' + this.email);
+        }
+};
+
+//Let's say I, the user, decided to change my name and email address to the following
+// name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
+
+user.name = "Tyler S. McGinnis";
+user.email = "tyler.mcginnis@devmounta.in";
+
+
+
+//Now call the sayName method that's on the user object which will alert the users email
+
+user.sayName();
