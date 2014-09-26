@@ -63,3 +63,22 @@ backPack[item] = "chapstick";
 backPack.color = "blue";
 
 console.log(backPack);
+
+//Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
+
+var me = {
+    name: "josh",
+    age: 31,
+    height: "6'1",
+    gender: "male",
+    married: "no",
+    eyeColor: "hazel",
+    hairColor: "brown"
+}
+
+
+//Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
+
+for (var key in me) {
+    alert(me[key]);
+}
